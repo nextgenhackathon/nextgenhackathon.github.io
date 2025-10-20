@@ -1,0 +1,200 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NextGen — Bootcamp Curriculum</title>
+  <meta name="description" content="Miva AI Cyber Hub: 7-week practical cybersecurity bootcamp curriculum (VMs, Nmap, Burp, SQLi, XSS, Metasploit, password cracking). Ready for GitHub Pages." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🛡️</text></svg>">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="base.css">
+  
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MI</div>
+        <div>
+          <h1>NextGen Hackathon</h1>
+          <p class="lead">7-week practical cybersecurity bootcamp — VM labs, Nmap, Burp, SQLi, XSS, Metasploit, cracking.</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#curriculum">Curriculum</a>
+        <a class="btn" href="#instructors">Instructors</a>
+      </nav>
+    </header>
+   <section class="hero-section">
+      <h2>Capture-The-Flag CTF Hackathon</h2>
+      <p>Master the art of ethical hacking, penetration testing, and cybersecurity defense in a hands-on 7-week journey. Set up labs, exploit systems, and learn from real-world experts.</p>
+      <a href="#register" class="register-btn">Register Here</a>
+    </section>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Fast, practical, hands-on — built for beginners & intermediates</h2>
+        <p class="small">This static site is optimized for GitHub Pages: single-file `index.html` with responsive layout. Each week contains a clear core topic, key tool, hands-on goal, and deliverable.</p>
+
+        <div class="feature-list">
+          <span class="pill">7-week curriculum</span>
+          <span class="pill">VM labs & practical flags</span>
+          <span class="pill">Screenshots / deliverables for assessment</span>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#curriculum">View curriculum</a>
+          <a class="btn" href="#how-to-deploy">Deploy</a>
+        </div>
+
+      </div>
+
+      <aside class="hero-card">
+        <h3>Quick facts</h3>
+        <p class="meta">Format: Weekly modules — each with a hands-on lab and a single deliverable you submit for review.</p>
+        <p class="meta">Estimated time: 6–10 hours/week (self-paced)</p>
+
+        <div style="margin-top:12px">
+          <div class="small">Suggested tools to pre-install:</div>
+          <ul class="small">
+            <li>Kali Linux (VM) or Parrot OS</li>
+            <li>VirtualBox / VMware</li>
+            <li>Burp Suite (Community)</li>
+            <li>Metasploit, Nmap, SQLMap, John/Hashcat</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <main id="curriculum">
+      <h2 style="margin-top:22px">Curriculum</h2>
+      <div class="weeks">
+        <article class="week">
+          <h3>Week 1 — The Hacker's Toolkit</h3>
+          <div class="meta">Core Topic: Setting up your virtual lab (Kali/Parrot) and mastering essential Linux command-line navigation (ls, cd, cat, grep, find).</div>
+          <div class="meta">Key Concept: Understanding the "Five Phases of Hacking" as a mental model for every engagement.</div>
+          <p><strong>Hands-On Goal:</strong> Successfully install a VM and use basic commands to find a hidden flag in the filesystem.</p>
+          <div class="deliverable">Deliverable: Submit the flag found on the practice machine.</div>
+        </article>
+
+        <article class="week">
+          <h3>Week 2 — Mapping the Terrain with Nmap</h3>
+          <div class="meta">Core Topic: Active network scanning. Understanding what ports are and what they tell you.</div>
+          <div class="meta">Key Tool: Nmap.</div>
+          <p><strong>Hands-On Goal:</strong> Scan a target IP address to identify open ports, running services, and the operating system version.</p>
+          <div class="deliverable">Deliverable: A screenshot of your Nmap scan results showing the services on a target.</div>
+        </article>
+
+        <article class="week">
+          <h3>Week 3 — Intercepting Web Traffic</h3>
+          <div class="meta">Core Topic: Introduction to web application hacking and how HTTP requests work.</div>
+          <div class="meta">Key Tool: Burp Suite (Community Edition).</div>
+          <p><strong>Hands-On Goal:</strong> Configure your browser to use Burp Suite as a proxy, intercept a login request, and modify it before sending it to the server.</p>
+          <div class="deliverable">Deliverable: A screenshot showing a modified HTTP request in Burp Suite's Repeater tab.</div>
+        </article>
+
+        <article class="week">
+          <h3>Week 4 — SQL Injection (SQLi)</h3>
+          <div class="meta">Core Topic: Exploiting databases through web applications. Focus on understanding how user input can be turned into a database query.</div>
+          <div class="meta">Key Tool: SQLMap.</div>
+          <p><strong>Hands-On Goal:</strong> Use SQLMap to automate the process of enumerating the databases on a vulnerable web application.</p>
+          <div class="deliverable">Deliverable: The name of a hidden database found using SQLMap.</div>
+        </article>
+
+        <article class="week">
+          <h3>Week 5 — Cross-Site Scripting (XSS)</h3>
+          <div class="meta">Core Topic: Exploiting trust by injecting malicious scripts into web pages viewed by other users. Focus on simple Reflected XSS.</div>
+          <div class="meta">Key Tool: Browser Developer Tools.</div>
+          <p><strong>Hands-On Goal:</strong> Craft a basic JavaScript payload to create an alert pop-up on a vulnerable webpage.</p>
+          <div class="deliverable">Deliverable: The working XSS payload you created.</div>
+        </article>
+
+        <article class="week">
+          <h3>Week 6 — Gaining a Foothold with Metasploit</h3>
+          <div class="meta">Core Topic: Using an exploitation framework to gain initial access to a target system.</div>
+          <div class="meta">Key Tool: Metasploit Framework.</div>
+          <p><strong>Hands-On Goal:</strong> Find and configure a pre-packaged exploit to gain a remote shell on a known vulnerable machine (e.g., Metasploitable2).</p>
+          <div class="deliverable">Deliverable: A screenshot of your active Meterpreter session on the target machine.</div>
+        </article>
+
+        <article class="week">
+          <h3>Week 7 — Cracking the Code</h3>
+          <div class="meta">Core Topic: Understanding password hashing and basic cracking techniques.</div>
+          <div class="meta">Key Tool: John the Ripper (JtR) or Hashcat.</div>
+          <p><strong>Hands-On Goal:</strong> Use a common wordlist to crack a list of provided password hashes (e.g., MD5, SHA-256).</p>
+          <div class="deliverable">Deliverable: The list of cracked passwords.</div>
+        </article>
+
+      </div>
+    </main>
+
+        <section id="instructors" class="instructors">
+      <h2>Meet the Instructors</h2>
+      <p class="meta">Our mentors bring years of real-world cybersecurity, network engineering, and ethical hacking experience.</p>
+      <div class="instructor-grid">
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 1">
+          <h4>Instructor 1</h4>
+          <p>Ethical Hacker & Trainer</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 2">
+          <h4>Instructor 2</h4>
+          <p>Network Security Specialist</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 3">
+          <h4>Instructor 3</h4>
+          <p>Penetration Tester</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 4">
+          <h4>Instructor 4</h4>
+          <p>Cloud Security Engineer</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 5">
+          <h4>Instructor 5</h4>
+          <p>DevSecOps Expert</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 6">
+          <h4>Instructor 6</h4>
+          <p>Red Team Analyst</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 7">
+          <h4>Instructor 7</h4>
+          <p>Threat Intelligence Researcher</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/80" alt="Instructor 8">
+          <h4>Instructor 8</h4>
+          <p>Incident Response Lead</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div>Built for <strong>Mustapha</strong> — ready to publish on GitHub Pages.</div>
+      <div class="small">Want a multi-page site, dark/light toggle, or to convert this to a Jekyll theme? Ask and I'll generate it.</div>
+    </footer>
+  </div>
+
+  <script>
+    // smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
